@@ -23,6 +23,7 @@
                 fill-opacity: 0;
                 stroke-opacity: 1;
             }
+            a { text-decoration:none} 
         </style>
     </head>
     <body id="page-top">
@@ -59,7 +60,7 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-10">
-                        <h1 class="fw-bolder text-center" style="margin-bottom: 40px;"># About</h1>
+                        <a href="#about"><h1 class="fw-bolder text-center" style="margin-bottom: 40px;"># About</h1></a>
                         <div class="row clearfix">
                                 <div class="col-xs-12 col-sm-12 col-md-4 no-print">
                                     <span class="profile-img" style="background-image: url(assets/cat.png)"></span>
@@ -90,7 +91,7 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-10">
-                        <h1 class="fw-bolder text-center" style="margin-bottom: 40px;"># Skills</h1>
+                        <a href="#skills"><h1 class="fw-bolder text-center" style="margin-bottom: 40px;"># Skills</h1></a>
                             <div class="subheading mb-3">Programing Languages</div>
                             <ul class="list-inline dev-icons">
                                  <div class="list-inline-item">
@@ -133,7 +134,7 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-10">
-                        <h1 class="fw-bolder text-center" style="margin-bottom: 40px; color: white;"># Archiving</h1>
+                        <a href="#archiving"><h1 class="fw-bolder text-center" style="margin-bottom: 40px; color: white;"># Archiving</h1></a>
                         <div class="row">
                             <div class="col-sm-6">
                               <div class="card" style="margin-bottom: 30px;">
@@ -172,7 +173,7 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-10">
-                        <h1 class="fw-bolder text-center" style="margin-bottom: 40px;"># Experience</h1>
+                        <a href="#experience"><h1 class="fw-bolder text-center" style="margin-bottom: 40px;"># Experience</h1></a>
                             <div class="row clearfix">
                                 <div class="col-xs-12 col-sm-12 col-md-4 no-print">
                                     <h4 class="mb-0">Bigdata engineer</h4>
@@ -197,44 +198,224 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-10">
-                        <h1 class="fw-bolder text-center" style="margin-bottom: 40px;"># Projects</h1>
+                        <a href="#projects"><h1 class="fw-bolder text-center" style="margin-bottom: 40px;"># Projects</h1></a>
                             <div class="accordion" id="accordionPanelsStayOpenExample">
                                 <div class="accordion-item">
                                   <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                        <strong>Item #1</strong> 
+                                        <strong>[WORK] Bulid bigdata system of MG Bank</strong> 
                                     </button>
                                   </h2>
                                   <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
                                     <div class="accordion-body">
-                                      will upload soon.
+                                        <table class="table table-striped table-hover table-bordered border-light">
+                                              <tbody>
+                                                <tr class="align-middle">
+                                                  <th scope="row" style="text-align: center">Summary</th>
+                                                  <td>The goal of this project is to build a big data system for data analysis and to integrate separated data into a single data warehouse.
+                                                    To this end, we build a cluster with multiple servers and build a big data platform using Cloudera Enterprise Hadoop.
+                                                    After that, we collect and load data from several DB using Sqoop, NiFi, etc.
+                                                </td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                  <th scope="row" style="text-align: center">Period</th>
+                                                  <td>2021.08 - 2022.03</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Skills</th>
+                                                    <td>Ansible, Cloudera Hadoop, MariaDB, Kudu, Impala, NiFi, Ranger, Atlas</td>
+                                                  </tr>
+                                                <tr class="align-middle">
+                                                  <th scope="row" style="text-align: center">Position</th>
+                                                  <td>
+                                                    <ul>
+                                                        <li>Build and operate big data platform</li>
+                                                        <li>Tune the configration for performance and troubleshoot issues</li>
+                                                        <li>Kerberise cluster</li>
+                                                        <li>create ETL workflow using NiFi</li>
+                                                    </ul>
+                                                  </td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">etc.</th>
+                                                    <td>I used Ansible playbook to automate server setup.</td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
                                     </div>
                                   </div>
                                 </div>
                                 <div class="accordion-item">
                                   <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                      <strong>Item #2</strong> 
+                                      <strong>[SIDE] KBO analytical Dashboard</strong> 
                                     </button>
                                   </h2>
                                   <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                                     <div class="accordion-body">
-                                        will upload soon.
+                                        <table class="table table-striped table-hover table-bordered border-light">
+                                              <tbody>
+                                                <tr class="align-middle">
+                                                  <th scope="row" style="text-align: center">Summary</th>
+                                                  <td>I started this project because I wanted to study the basic knowledge of web. 
+                                                      The reason I chose KBO data was that my study group was working on a KBO data collection project at the time.
+                                                      This dashboard are the results of using simple baseball data analysis statistical techniques, and when additional analysis models are completed, i will upload them to the dashboard.
+                                                    </td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Goals</th>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Visualize KBO data analysis results.</li>
+                                                            <li>Learn how to use Flask</li>
+                                                            <li>Learn basic html/css through Bootstrap.</li>
+                                                        </ul>
+                                                    </td>
+                                                  </tr>
+                                                <tr class="align-middle">
+                                                  <th scope="row" style="text-align: center">Period</th>
+                                                  <td>2020.10 - 2020.11</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Headcount</th>
+                                                    <td>alone</td>
+                                                  </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Skills</th>
+                                                    <td>Flask, Bootstrap, Dash, Plotly, MariaDB</td>
+                                                  </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Repository</th>
+                                                    <td>https://github.com/Hyeonji-Ryu/KBO_analytical_dashboard</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">etc.</th>
+                                                    <td>
+                                                        <a href="" class="link-dark">
+                                                        CLICK to visit KBO analytical Dashboard
+                                                        </a>
+                                                    </td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
                                     </div>
                                   </div>
                                 </div>
                                 <div class="accordion-item">
                                   <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                        <strong>Item #3</strong> 
+                                        <strong>[SIDE] KBO scraping project</strong> 
                                     </button>
                                   </h2>
                                   <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                                     <div class="accordion-body">
-                                        will upload soon.
+                                        <table class="table table-striped table-hover table-bordered border-light">
+                                              <tbody>
+                                                <tr class="align-middle">
+                                                  <th scope="row" style="text-align: center">Summary</th>
+                                                  <td>
+                                                    At first, it was started simply for the purpose of collecting data for KBO data analysis. Then we grew greedy and wanted the data to be updated automatically. As a result, we automate scraping using GitHub actions.
+                                                    We bring daily updated data from the KBO website through GitHub action and load it in real-time on the DB server, and the analysis dashboard gets data from the server.
+                                                  </td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Goals</th>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Collect all KBO data</li>
+                                                            <li>Automate data scraping of KBO</li>
+                                                        </ul>
+                                                    </td>
+                                                  </tr>
+                                                <tr class="align-middle">
+                                                  <th scope="row" style="text-align: center">Period</th>
+                                                  <td>2020.08 - 2021.12</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Headcount</th>
+                                                    <td>3 people</td>
+                                                  </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Skills</th>
+                                                    <td>Python, Action(Github), AWS, MariaDB</td>
+                                                  </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Repository</th>
+                                                    <td>https://github.com/LOPES-HUFS/KBO_data</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">etc.</th>
+                                                    <td>
+                                                        <a href="https://github.com/LOPES-HUFS/KBO_data/blob/main/README.md" class="link-dark">
+                                                        CLICK to check README and example code
+                                                        </a>
+                                                    </td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
                                     </div>
                                   </div>
                                 </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                          <strong>[SIDE] Deep learning from scratch using Julia</strong> 
+                                      </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                                      <div class="accordion-body">
+                                        <table class="table table-striped table-hover table-bordered border-light">
+                                            <tbody>
+                                                <tr class="align-middle">
+                                                  <th scope="row" style="text-align: center">Summary</th>
+                                                  <td>
+                                                      This project uses only Julia language to implement deep learning module. I made a module based on what I understood while studying deep learning.
+                                                      The functions used in this project are designed for educational purposes only. I uploaded some posts about the project's process on my blog, but they are written only Korean.
+                                                  </td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Goals</th>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Learn how to use Julia language</li>
+                                                            <li>Totally understand deep learning's process</li>
+                                                            <li>Make and train model using your own code</li>
+                                                        </ul>
+                                                    </td>
+                                                  </tr>
+                                                <tr class="align-middle">
+                                                  <th scope="row" style="text-align: center">Period</th>
+                                                  <td>2020.05 - 2020.08</td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Headcount</th>
+                                                    <td>alone</td>
+                                                  </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Skills</th>
+                                                    <td>Julia</td>
+                                                  </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">Repository</th>
+                                                    <td>
+                                                        <a href="https://github.com/Hyeonji-Ryu/Deep_Learning_in_Julia" class="link-dark">
+                                                        https://github.com/Hyeonji-Ryu/Deep_Learning_in_Julia
+                                                    </a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="align-middle">
+                                                    <th scope="row" style="text-align: center">etc.</th>
+                                                    <td>
+                                                        <a href="https://github.com/Hyeonji-Ryu/Deep_Learning_in_Julia/blob/master/README.md" class="link-dark">
+                                                            CLICK to check README and example code
+                                                        </a>
+                                                    </td>
+                                                  </tr>
+                                              </tbody>
+                                          </table>
+                                      </div>
+                                    </div>
+                                  </div>
                               </div>
                     </div>
                 </div>
@@ -245,7 +426,7 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-10">
-                        <h1 class="fw-bolder text-center"># Education</h1>
+                        <a href="#education"><h1 class="fw-bolder text-center"># Education</h1></a>
                         <Br>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
@@ -256,7 +437,7 @@
                         </div>
                         <div class="d-flex flex-column flex-md-row justify-content-between">
                             <div class="flex-grow-1">
-                                <h4 class="mb-0">chunghyun High school</h4>
+                                <h4 class="mb-0">Chunghyun High school</h4>
                                 <div class="subheading mb-3" style="color: gray;">academic school</div>
                             </div>
                             <div class="flex-shrink-0"><span class="text">March 2012 - February 2015</span></div>
