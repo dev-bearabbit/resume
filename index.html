@@ -20,6 +20,7 @@
             margin: 0;
             padding: 0;
             height: 100%; /* 콘텐츠 전체 높이 기준 */
+            overflow-x: hidden;
         }
 
         body {
@@ -35,6 +36,17 @@
             z-index: -1;
             width: 100%;
             height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* 반투명 검정 */
+            pointer-events: none; /* 클릭 방지 */
         }
 
         .cover-container {
@@ -69,6 +81,7 @@
 
         .download-buttons {
             margin-top: 20px;
+            margin-bottom: 60px;
         }
 
         .dropdown-container {
@@ -125,7 +138,6 @@
 
         footer {
             text-align: center;
-            margin-top: 60px;
             padding: 5px;
             color: #ccc;
         }
@@ -133,6 +145,7 @@
 </head>
 <body>
     <canvas id="canvas"></canvas>
+    <div class="overlay"></div>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-xl navbar-dark bg-black fixed-top" id="mainNav">
       <div class="container px-4">
@@ -173,43 +186,48 @@
 
     <script>
       const canvas = document.getElementById('canvas');
+      const overlay = document.querySelector('.overlay');
       const ctx = canvas.getContext('2d');
   
       let cols, ypos;
   
       function resizeCanvas() {
-          // 캔버스 크기 동적 설정
+          // 페이지 전체 높이를 정확히 반영
           canvas.width = window.innerWidth;
-          canvas.height = Math.max(window.innerHeight, document.body.scrollHeight);
+          canvas.height = Math.max(window.innerHeight, document.documentElement.scrollHeight); // documentElement로 변경
   
-          // 열과 ypos 배열 초기화
+          // overlay 크기 동기화
+          overlay.style.width = `${canvas.width}px`;
+          overlay.style.height = `${canvas.height}px`;
+  
+          // 매트릭스 열 및 위치 초기화
           cols = Math.floor(canvas.width / 20) + 1;
           ypos = Array(cols).fill(0);
       }
   
       function matrix() {
-          ctx.fillStyle = '#0001'; // 화면 어둡게 덮음
+          ctx.fillStyle = '#0001'; // 배경을 살짝 어둡게 덮음
           ctx.fillRect(0, 0, canvas.width, canvas.height);
   
           ctx.fillStyle = '#009600'; // 초록색 텍스트
           ctx.font = '14pt monospace';
   
           ypos.forEach((y, ind) => {
-              const text = String.fromCharCode(Math.random() * 512);
-              const x = ind * 20; // 열 간격
+              const text = String.fromCharCode(Math.random() * 512); // 랜덤 문자
+              const x = ind * 20;
               ctx.fillText(text, x, y);
-              ypos[ind] = y > canvas.height + Math.random() * 10000 ? 0 : y + 20; // 높이 초과 시 초기화
+              ypos[ind] = y > canvas.height + Math.random() * 10000 ? 0 : y + 20;
           });
       }
   
-      // 창 크기 변경 이벤트에 따라 캔버스 크기 조정
+      // 창 크기 변경 시 캔버스 크기 조정
       window.addEventListener('resize', resizeCanvas);
   
-      // 초기화 및 실행
+      // DOMContentLoaded 이후 초기화
       document.addEventListener('DOMContentLoaded', () => {
           resizeCanvas();
-          setInterval(matrix, 50); // 매트릭스 애니메이션 실행
+          setInterval(matrix, 50); // 매트릭스 효과 실행
       });
-  </script>  
+  </script>
 </body>
 </html>
